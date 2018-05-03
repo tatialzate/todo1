@@ -1,3 +1,10 @@
 <div>
-    <h1>Hi!, {{person}}</h1>
+    <h1>
+        <app-my-component></app-my-component>
+    </h1>
+    <img [src]="imgSource">
+</div>
+<div>
+    <input type="text" [disabled]="enabled" [value]="count"/>
+    <button (click)="increment()">Click me</button>
 </div>

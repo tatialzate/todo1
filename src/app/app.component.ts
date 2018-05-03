@@ -6,6 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
-  person = 'Tatiana :D';
+  count = 0;
+  imgSource = './../favicon.ico';
+  enabled = true;
+  
+  increment() {
+    this.count = this.count + 1;
+    this.enabled = this.enabled ? false : true;
+  }
 }
